@@ -20,7 +20,46 @@
 .sidebar {
     grid-column: 1;
     grid-row: 1 / 3;
-    border: 1px solid red;
+    background-color: #1992d4;
+}
+
+.sidebar-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr 3fr;
+}
+
+.nav-title,
+.nav-controls,
+.nav-options {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-items: center;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.nav-title {
+    margin: 15px 5px 0px;
+}
+
+.nav-controls,
+.nav-options {
+    margin: 30px 5px 0px;
+}
+
+.sidebar h1,
+.sidebar p {
+    color: white;
+    justify-self: start;
+}
+
+.sidebar p {
+    font-size: 1.3rem;
+}
+
+.sidebar img {
+    color: white;
 }
 
 .main-content {
