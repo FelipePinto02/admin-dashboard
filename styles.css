@@ -10,9 +10,10 @@
     grid-template-rows: 1fr 4fr;
 }
 
-.header {
+header {
     grid-column: 2;
     grid-row: 1;
+    box-shadow: 0px 3px 5px #00000038;
 }
 
 .header-grid {
@@ -111,7 +112,7 @@ input[type="text"] {
     font-size: 1rem;
 }
 
-.sidebar {
+nav {
     grid-column: 1;
     grid-row: 1 / -1;
     background-color: #1992d4;
@@ -144,21 +145,22 @@ input[type="text"] {
     margin: 30px 5px 0px;
 }
 
-.sidebar h1,
-.sidebar p {
+nav h1,
+nav a {
     color: white;
     justify-self: start;
 }
 
-.sidebar p {
+nav a {
     font-size: 1.3rem;
+    text-decoration: none;
 }
 
-.main-content {
+main {
     grid-column: 2;
     grid-row: 2;
     background-color: #e2e8f0;
-    box-shadow: #68646430 0px -2.6px;
+    margin-top: 3px;
 }
 
 .main-content-grid {
