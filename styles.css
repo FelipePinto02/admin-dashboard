@@ -8,7 +8,6 @@
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 4fr;
-    height: 100vh;
 }
 
 .header {
@@ -119,9 +118,11 @@ input[type="text"] {
 }
 
 .sidebar-grid {
+    position: fixed;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 6fr 3fr;
+    margin-left: 5px;
 }
 
 .nav-title,
@@ -164,7 +165,7 @@ input[type="text"] {
     display: grid;
     grid-template-columns: 4fr 1fr;
     height: 500px;
-    margin: 50px 20px;
+    margin: 20px;
 }
 
 .side-content {
@@ -180,22 +181,26 @@ input[type="text"] {
 .side-content-card {
     background-color: white;
     display: grid;
-    gap: 50px;
     margin: 15px 20px 0px 0px;
-    padding: 0px 20px;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+}
+
+.side-content-card.announcements {
+    gap: 20px;
+    padding: 0px 20px;
 }
 
 .card-content {
     border-bottom: 1.3px solid #c5c5c5ad;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     display: grid;
     gap: 5px;
 }
 
 .card-content:first-child {
     margin-top: 25px;
-    padding-top: 15px;
+    padding-top: 5px;
 }
 .card-content:last-child {
     border: none;
@@ -208,5 +213,26 @@ input[type="text"] {
 
 .card-text {
     font-size: 0.9rem;
+    color: grey;
+}
+
+.side-content-card.trending {
+    gap: 20px;
+    padding: 15px 20px;
+}
+
+.trending-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.trending-user-data {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.trending-user-data p:last-child {
     color: grey;
 }
