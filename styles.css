@@ -286,3 +286,31 @@ main {
 .trending-user-data p:last-child {
     color: grey;
 }
+
+nav a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+header button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #32abed;
+    transition: all 0.1s ease-in;
+}
+
+header img:hover,
+.projects img:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.header-bottom-left img:hover {
+    cursor: auto;
+    transform: none;
+}
+
+input:focus {
+    outline: none;
+    border: 0.5px solid grey;
+}
